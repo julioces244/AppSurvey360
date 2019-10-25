@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">CCD_Survey</string>
+
+
+    <string name="rating1">Necesita mejorar significativamente para cumplir con lo requerido para su disposición. Es una debilidad.</string>
+    <string name="rating2">Necesita mejorar para cumplir con lo requerido para su posición. Tiene posibilidades de desarrollo la competencia.</string>
+    <string name="rating3">Cumple las expectativas de lo requerido para su posición.</string>
+    <string name="rating4">Excede las expectativas de lo requerido para su posición. Esta competencia es una fortaleza en su perfil.</string>
+    <string name="rating5">Excede de manera excepcional las expectativas de lo requerido para su posición. Es un modelo a seguir.</string>
+
+
+    <string name="indication_experience">En esta sección, las preguntas son sobre uno mismo y sobre el tiempo de trabajo que se lleva en la organización, por favor ser sincero. Gracias!!</string>
+    <string name="indications">Evalúa el nivel alcanzado de cada comportamiento según la siguiente escala:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_bot">"¡Presiona el botón y dime Hola!"</string>
+
+    <string name="softskills">Habilidades Blandas (Módulo 3)</string>
+
+
+    <string name="innovation">Innovación:
+    Es la capacidad de desarrollar de desarrollar nuevos conocimientos y aplicar soluciones diferentes y creativas. Incluye repensar enfoques y procesos típicos con el fin de crear oportunidades para generar mayor valor.
+    </string>
+    <string name="innovation_question1">1. Reta al status quo para considerar enfoques creativos que puedan generar mayor valor</string>
+    <string name="innovation_question2">2. Genera alternativas para la mejora de procesos, productos o servicios.</string>
+    <string name="innovation_question3">3. Crea un entorno que fomenta y recompensa la creatividad e innovación, rompiendo las barreras y estereotipos.</string>
+
+
+    <string name="results">
+        Es la pasión para lograr y superar los objetivos de la empresa. Implica dirigir esfuerzos a obtener un resultado concreto sostenible en el tiempo.
+    </string>
+    <string name="result_question1">Propone y establece objetivos retadores para sí mismo, así como para su equipo.</string>
+    <string name="result_question2">Genera compromiso y entusiasmo, conectando a su equipo con las metas y motivándolo a alcanzarlas.</string>
+    <string name="result_question3">Trabaja para asegurar el logro de los objetivos en los tiempos previstos y con los recursos que se le asignan ¿vence los obstáculos?</string>
+
+
+    <string name="workteam">
+        Compromiso por cooperar proactivamente con otras personas y equipos para apoyar en la ejecución de la estrategia, así como lograr sinergias que permitan alcanzar los objetivos de San Fernando.
+    </string>
+    <string name="workteam_question1">Promueve el diálogo abierto y cercano haciendo que todos se sientan parte activa del equipo.</string>
+    <string name="workteam_question2">Reconoce públicamente, a través de una comunicación asertiva, el aporte de los miembros de su equipo, así como los aportes de otros.</string>
+    <string name="workteam_question3">Es responsable de la ejecución y del logro de los objetivos del equipo, gestiona el tiempo y los recursos necesarios para los proyectos.</string>
+
+
+    <string name="flexibility">
+        Es la capacidad de actuar constructivamente y efectivamente en distintas situaciones con diferentes personas y equipos: así como escuchando y respetando los distintos puntos de vista, independientemente que esté o no de acuerdo.
+    </string>
+    <string name="flexibility_question1">Se caracteriza por ser un agente de cambio, quién a través del ejemplo actúa constructivamente ofreciendo nuevos aportes o soluciones.</string>
+    <string name="flexibility_question2">Dirige a su equipo de manera que pueda afrontar situaciones nuevas de incertidumbre o urgencias sin incomodarse o alterarse.</string>
+    <string name="flexibility_question3">Replantea sus tácticas/estrategias para responder con rapidez a los cambios organizacionales.</string>
+
+
+    <string name="client">
+        Conoce, entiende y satisface las necesidades de los clientes con el fin de exceder sus expectativas y mejorar la calidad del servicio. El cliente es su razón de ser.
+    </string>
+    <string name="client_question1">Ejecuta las estrategias referidas a la satisfacción del cliente interno y externo, invierte recursos para identificar sus necesidades y anticiparse a estas.</string>
+    <string name="client_question2">Asegura que su equipo comprenda la importancia de satisfacer al cliente interno/externo.</string>
+    <string name="client_question3">Mantiene una comunicación eficaz con el cliente interno/externo para alinear expectativas.</string>
+
+
+    <string name="responsibility">
+        Capacidad de gestionar la propia efectividad sin buscar excusas; rindiendo cuentas de sus acciones y resultados con transparencias.
+    </string>
+    <string name="responsibility_question1">Genera el contexto necesario para la ejecución y efectividad de quienes lo reportan, monitorea el progreso de los planes de trabajo de área.</string>
+    <string name="responsibility_question2">Se hace responsable y está a cargo de lo que pasa en su área.</string>
+    <string name="responsibility_question3">Construye equipos efectivos y aplica la mejora continua de los sistemas de trabajo, procesos y ejecución.</string>
+
+
+    <string name="business">
+        Es la capacidad de comprender rápidamente los cambios del entorno, así como las fortalezas y debilidades internas, a fin de gestionar con un enfoque integral, contemplando el todo, sus partes y las relaciones entre éstas, para identificar la mejor respuesta estratégica para el negocio.
+    </string>
+    <string name="business_question1">Conoce cómo se mueve cada sector estando alerta a posibles oportunidades, amenazas o riesgos.</string>
+    <string name="business_question2">Propone soluciones tomando en consideración todas las aristas, el impacto global en la empresa y los grupos de interés (accionistas, clientes internos y externos).</string>
+    <string name="business_question3">Toma decisiones analizando la mejor respuesta, más allá de sus propios intereses o los de su área.</string>
+    <string name="business_question4">Gestiona enfocándose en contribuir con los factores financieros (costos, gastos y rentabilidad), de cliente (satisfacción, servicio y participación) de procesos (calidad e innovación) y de aprendizaje (cultura, clima, habilidades para la innovación y tecnología).</string>
+
+
+    <string name="planning">
+        Es la capacidad de priorizar y establecer líneas de acción concretas y así alcanzar los objetivos de manera eficaz, dentro de los plazos y con los recursos requeridos, sin afectar la calidad del resultado ni el servicio a nuestros clientes externos e internos.
+    </string>
+    <string name="planning_question1">Tiene un plan de trabajo alineado a los objetivos de su gerencia, gestionando las perspectivas financieras, procesos, clientes, aprendizaje y desarrollo.</string>
+    <string name="planning_question2">Dimensiona todo lo que implica llevar a cabo un plan o proyecto, asegurándose de contar con los recursos necesarios (estructura, presupuesto y tiempo).</string>
+    <string name="planning_question3">Asigna objetivos y responsabilidades en función de las capacidades y el nivel de compromiso de los miembros de su equipo.</string>
+    <string name="planning_question4">Asegura que su equipo comprenda sus responsabilidades y tareas, el contexto en el que se realizarán y el resultado que se espera en cantidad, calidad y tiempo.</string>
+    <string name="planning_question5">Establece las prioridades del equipo.</string>
+    <string name="planning_question6">Realiza reuniones de estatus para monitorear los avances y riesgos para la ejecución de los planes de proyectos del área.</string>
+    <string name="planning_question7">Frente a un posible retraso o problema, toma acción inmediata para llegar al resultado esperado.</string>
+
+
+    <string name="management">
+        Es un líder integro con capacidad para analizarse a si mismo y reconocer sus fortalezas y oportunidades de mejora, poniendo todo el esfuerzo para trabajar en ello y facilitar el propio crecimiento.
+    </string>
+    <string name="management_question1">Reconoce sus debilidades y fortalezas para ampliar sus competencias de liderazgo.</string>
+    <string name="management_question2">Solicita retroalimentación y toma acción sobre sus oportunidades de mejora.</string>
+    <string name="management_question3">Conoce y controla sus impulsos y estados de ánimo respetando a los demás en toda circunstancia. No grita.</string>
+    <string name="management_question4">Si se equivoca, lo admite con humildad y aprende de ello.</string>
+    <string name="management_question5">Posee un entusiasmo personal y deseo de éxito, que le permiten superar las adversidades.</string>
+    <string name="management_question6">Es consistente entre lo que dice y hace.</string>
+    <string name="management_question7">Es responsable de su propio desarrollo profesional y personal</string>
+    <string name="management_question8">En toda situación, actúa con decisión y valentía.</string>
+    <string name="management_question9">Actúa prevaleciendo los valores, la moralidad y la ética.</string>
+
+
+    <string name="communication">
+        Es la capacidad de escuchar, hacer preguntas, expresar argumentos e ideas en forma efectiva y constructiva, aún en situaciones complejas, asegurando una comunicación clara y transparente, para alinear, motivar y comprometer.
+    </string>
+    <string name="communication_question1">Comunica y asegura la comprensión de los objetivos principales de su área.</string>
+    <string name="communication_question2">Comunica los avances, logros y nuevos retos de su área generando compromiso con los mismos.</string>
+    <string name="communication_question3">Comunica asertivamente las buenas y malas noticias buscando minimizar el surgimiento de rumores y chismes.</string>
+    <string name="communication_question4">Fomenta el intercambio de opiniones e ideas, escuchando e interesándose por los diversos puntos de vista.</string>
+    <string name="communication_question5">Comunica oportunamente a su equipo situaciones de cambio que impactan en su área y/o que requieran alguna acción inmediata.</string>
+    <string name="communication_question6">Alienta dentro de su equipo a mantener una comunicación abierta, confiable y transparente con los demás.</string>
+
+
+    <string name="developing">
+        Es interesarse genuinamente por crear las condiciones para asegurar el desarrollo, aprendizaje y compromiso de los colaboradores, aflorando el máximo potencial de las personas para contribuir equipos de alto rendimiento.
+    </string>
+    <string name="developing_question1">Asume la responsabilidad de la gestión de su equipo (seguridad, selección, capacitación, inducción, temas personales, amonestaciones, etc.).</string>
+    <string name="developing_question2">Transmite sus conocimientos y experiencias, enseñando a su equipo nuevas formas de pensar y actuar.</string>
+    <string name="developing_question3">Periódicamente brinda retroalimentación, sobre qué funciona, qué no y que mejorar, reforzando comportamientos deseables.</string>
+    <string name="developing_question4">Identifica a los más talentosos de su equipo (alto desempeño y alto potencial) y define un plan de acción para su desarrollo.</string>
+    <string name="developing_question5">Forma una cantera de colaboradores dentro de su área para asegurar la cobertura futura de puestos clave.</string>
+    <string name="developing_question6">Reconoce los logros de su equipo.</string>
+
+
+    <string name="experience"></string>
+    <string name="experience_question1">¿Tienes experiencia en el cargo que llevas?</string>
+    <string name="experience_question2">¿Cuántos años experiencia son?</string>
+    <string name="experience_question3">A la hora de trabajar, ¿organiza y planifica su trabajo antes de realizarlo?</string>
+    <string name="experience_question4">¿Tenía Ud. funciones de responsabilidad o personas a su cargo?</string>
+    <string name="experience_question5">¿Debes supervisar el trabajo de alguien?</string>
+    <string name="experience_question6">Descríbeme un día habitual en tu trabajo:</string>
+    <string name="experience_question7">¿Has tenido oportunidades en el trabajo para aprender y crecer?</string>
+    <string name="experience_question8">¿Has recibido reconocimiento o elogios por hacer un buen trabajo?</string>
+    <string name="experience_question9">¿Mis opiniones cuentan en mi trabajo?</string>
+    <string name="experience_question10">¿Cómo te llevas con tus compañeros?</string>
+    <string name="experience_question11">¿Mis compañeros de trabajo están comprometidos a hacer un trabajo de calidad?</string>
+    <string name="experience_question12">Nombre una persona de tu equipo que te apoya siempre</string>
+    <string name="experience_question13">¿Cómo te llevas con tú jefe?</string>
+    <string name="experience_question14">¿Tú jefe se preocupa por tí como persona?</string>
+    <string name="experience_question15">¿Tu jefe escucha las opiniones de todos?</string>
+    <string name="experience_question16">¿Tu jefe es consecuente con lo que dice?</string>
+    <string name="experience_question17">¿Tu jefe tiene comunicación clara, fluida y precisa?</string>
+    <string name="experience_question18">¿Tu jefe delega funciones y hace seguimiento?</string>
+
+    <string name="innovatione_question1">¿Hay estrategia de innovación en la empresa?</string>
+    <string name="innovatione_question2">¿Estás de acuerdo con la estrategia de la empresa?</string>
+    <string name="innovatione_question3">¿Su empresa realizó actividades con el objetivo de lograr la implementación de una nueva forma de organización de las prácticas para una organización en el trabajo?</string>
+    <string name="innovatione_question4">¿Estas atento a todo lo que nos rodea y buscas nuevas oportunidades?</string>
+    <string name="innovatione_question5">¿Has encontrado problemas en el desarrollo de tus labores?</string>
+    <string name="innovatione_question6">¿Cuándo existe un problema dentro de una determinada labor, pero aun así las personas siguen trabajando en vez de hacer algo para solucionarlo, surge una oportunidad para que tú puedas solucionarlo?</string>
+    <string name="innovatione_question7">¿Crees que la solución realizada ha sido innovadora?</string>
+    <string name="innovatione_question8">¿Porqué? Explique</string>
+    <string name="innovatione_question9">¿Realizas Actividades de Investigación y Desarrollo (I+D) interna?</string>
+    <string name="innovatione_question10">¿Realizas Capacitación para actividades de innovación?</string>
+    <string name="innovatione_question11">¿Realizas Estudios de mercado para introducción de innovaciones para la empresa?</string>
+
+    <string name="people">
+        Es interesarse genuinamente por crear las condiciones para asegurar el desarrollo, aprendizaje y compromiso de los colaboradores, aflorando el máximo potencial de las personas para contribuir equipos de alto rendimiento.
+    </string>
+    <string name="people_question1">Asume la responsabilidad de la gestión de su equipo (seguridad, selección, capacitación, inducción, temas personales, amonestaciones, etc.).</string>
+    <string name="people_question2">Transmite sus conocimientos y experiencias, enseñando a su equipo nuevas formas de pensar y actuar.</string>
+    <string name="people_question3">Periódicamente brinda retroalimentación, sobre qué funciona, qué no y que mejorar, reforzando comportamientos deseables.</string>
+    <string name="people_question4">Identifica a los más talentosos de su equipo (alto desempeño y alto potencial) y define un plan de acción para su desarrollo.</string>
+    <string name="people_question5">Forma una cantera de colaboradores dentro de su área para asegurar la cobertura futura de puestos clave.</string>
+    <string name="people_question6">Reconoce los logros de su equipo.</string>
+
+
+</resources>

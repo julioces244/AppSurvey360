@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_module1"
+    tools:context=".Experience_Activity">
+
+    <RelativeLayout
+        android:id="@+id/relative_skill_innovation1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragment_bot"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            tools:layout="@layout/fragment_chatbot"
+            class= "com.example.ccd_survey.Fragments.ChatbotFragment">
+
+        </fragment>
+
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:layout_below="@+id/fragment_bot"
+            android:id="@+id/diagonalLayout"
+
+            android:layout_margin="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:elevation="10dip"
+            app:shape_arc_position="bottom"
+            app:shape_arc_height="10dp">
+
+
+            <com.daimajia.androidviewhover.BlurLayout
+                android:id="@+id/blur_layout4"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:foreground="@drawable/image_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_experience" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Experiencia"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="105dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Modulo"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </com.daimajia.androidviewhover.BlurLayout>
+
+
+
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/diagonalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:alpha="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/bg_gradient2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_tittle_innovation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+
+                                android:text="@string/experience_question1"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/txt_innovation_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <RadioGroup
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/txt_innovation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_innovation_description"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/innovation"
+                                android:textSize="10sp" >
+
+
+
+                                    <RadioButton
+                                        android:paddingEnd="20dp"
+                                        android:id="@+id/rdb_1"
+                                        android:textColor="@color/colorPrimary"
+                                        android:buttonTint="@color/colorPrimary"
+                                        android:text="Sí"
+                                        android:checked="true"
+                                        android:textSize="10sp"
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <RadioButton
+                                        android:id="@+id/rdb_2"
+                                        android:textColor="@color/colorPrimary"
+                                        android:buttonTint="@color/colorPrimary"
+                                        android:text="No"
+                                        android:textSize="10sp"
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_question1"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/cv_tittle_innovation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+
+                                android:text="@string/experience_question2"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/txt_experience_question1"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <RadioGroup
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/rg_question2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_innovation_description"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/innovation"
+                                android:textSize="10sp" >
+
+
+
+                                <RadioButton
+                                    android:paddingEnd="10dp"
+                                    android:id="@+id/rdb_q2_1"
+                                    android:textColor="@color/colorPrimary"
+                                    android:buttonTint="@color/colorPrimary"
+                                    android:text="1 Año"
+                                    android:checked="true"
+                                    android:textSize="10sp"
+                                    android:layout_weight="3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RadioButton
+                                    android:paddingEnd="10dp"
+                                    android:id="@+id/rdb_q2_2"
+                                    android:textColor="@color/colorPrimary"
+                                    android:buttonTint="@color/colorPrimary"
+                                    android:text="2 Años"
+                                    android:textSize="10sp"
+                                    android:layout_weight="3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RadioButton
+                                    android:paddingEnd="10dp"
+                                    android:id="@+id/rdb_q2_3"
+                                    android:textColor="@color/colorPrimary"
+                                    android:buttonTint="@color/colorPrimary"
+                                    android:text="5 Años"
+                                    android:textSize="10sp"
+                                    android:layout_weight="3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RadioButton
+                                    android:id="@+id/rdb_q2_4"
+                                    android:textColor="@color/colorPrimary"
+                                    android:buttonTint="@color/colorPrimary"
+                                    android:text="Más de 5 años"
+                                    android:textSize="10sp"
+                                    android:layout_weight="3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_question2"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/cv_question1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+
+
+                            <TextView
+
+                                android:text="@string/experience_question3"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/txt_experience_question3"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <Spinner
+                                android:id="@+id/spn_experience_q3"
+                                android:textSize="5sp"
+                                android:foregroundGravity="center"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginEnd="60dp"
+                                android:entries="@array/answers"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                            </Spinner>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_question3"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/cv_question2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+
+
+                            <TextView
+
+                                android:text="@string/experience_question4"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/txt_experience_question4"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <Spinner
+                                android:id="@+id/spn_experience_q4"
+                                android:textSize="5sp"
+                                android:foregroundGravity="center"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginEnd="60dp"
+                                android:entries="@array/answers"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                            </Spinner>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_question4"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/cv_question3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+
+
+                            <TextView
+
+                                android:text="@string/experience_question5"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/txt_experience_question5"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <Spinner
+                                android:id="@+id/spn_experience_q5"
+                                android:textSize="5sp"
+                                android:foregroundGravity="center"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginEnd="60dp"
+                                android:entries="@array/answers"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                            </Spinner>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_question5"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/cv_question4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+
+                            <TextView
+
+                                android:text="@string/experience_question6"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/txt_experience_question6"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <EditText
+                                android:id="@+id/spn_experience_q6"
+                                android:textSize="10sp"
+                                android:inputType="textMultiLine"
+                                android:foregroundGravity="center"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginEnd="30dp"
+                                android:entries="@array/answers"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                            </EditText>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btn_experience1"
+                        android:layout_width="100dp"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/btn_radius"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/cv_question5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="20dp" />
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

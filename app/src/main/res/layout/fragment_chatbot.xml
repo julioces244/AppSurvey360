@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ChatbotFragment">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/bg_gradient5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.tomer.fadingtextview.FadingTextView
+                    android:id="@+id/txt_chatbot"
+                    android:textAlignment="center"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:timeout="1000"
+                    app:texts="@array/chatbot2"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/btn_microphone"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/btn_microphone3"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

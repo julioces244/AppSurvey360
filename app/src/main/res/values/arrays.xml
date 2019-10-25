@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="chatbot2">
+        <item>Presiona y dime hola</item>
+    </string-array>
+
+    <string-array name="answers">
+        <item>Siempre</item>
+        <item>Casi siempre</item>
+        <item>A veces</item>
+        <item>Casi nunca</item>
+        <item>Nunca</item>
+
+    </string-array>
+</resources>
