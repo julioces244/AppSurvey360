@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:replace="android:icon">
-        <activity android:name=".Activities.Question1Activity"></activity>
+        <activity android:name=".Activities.Question2Activity"></activity>
+        <activity android:name=".Activities.Question1Activity" />
         <activity android:name=".SplashScreenFinish_Activity" />
         <activity android:name=".Skill_People_Activity" />
         <activity android:name=".Skill_Communication_Activity" />

@@ -1,6 +1,7 @@
 package com.example.ccd_survey.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.ccd_survey.MainActivity;
 import com.example.ccd_survey.R;
 import com.tomer.fadingtextview.FadingTextView;
 
@@ -105,6 +107,11 @@ public class ChatbotFragment extends Fragment implements AIListener {
         String[] chattext = {result.getFulfillment().getSpeech()};
         txt_cb.setTimeout(1000, TimeUnit.MILLISECONDS);
         txt_cb.setTexts(chattext);
+
+        if(result.getFulfillment().getSpeech().equalsIgnoreCase("Salir")){
+            Intent logout = new Intent(getActivity(), MainActivity.class);
+            startActivity(logout);
+        }
 
 
     }

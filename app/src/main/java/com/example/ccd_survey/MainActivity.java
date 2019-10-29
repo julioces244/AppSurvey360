@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
@@ -37,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
     private Handler handler = new Handler();
     private static final int RECORD_REQUEST_CODE = 101;
     private RelativeLayout main_login;
+
+    public static final String PREFS_NAME = "MyApp";
+
+    private Integer idEvaluator, idCategory;
 
 
     @Override
@@ -99,10 +104,10 @@ public class MainActivity extends AppCompatActivity {
 
                     if (response.isSuccessful()) {
 
-                        Evaluator responseMessage = response.body();
+                        final Evaluator responseMessage = response.body();
                         Log.d(TAG, "responseMessage: " + responseMessage);
 
-                        Toast.makeText(MainActivity.this, responseMessage.getName() , Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Hola "+responseMessage.getName() , Toast.LENGTH_LONG).show();
 
                         progressBar.setVisibility(View.VISIBLE);
                         main_login.setVisibility(View.INVISIBLE);
@@ -126,6 +131,17 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     pStatus++;
                                 }
+
+                                idEvaluator = responseMessage.getIdEvaluator();
+                                idCategory = responseMessage.getCategory_id();
+
+                                SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPref.edit();
+                                editor.putInt("key_id",idEvaluator);
+                                editor.putInt("key_idcategory", idCategory);
+                                editor.commit();
+
+
 
                                 Intent login = new Intent(MainActivity.this, IndicationsActivity.class);
                                 startActivity(login);

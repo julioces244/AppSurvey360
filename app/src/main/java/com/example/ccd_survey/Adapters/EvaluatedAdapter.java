@@ -43,6 +43,8 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
         this.evaluateds = evaluateds;
     }
 
+
+
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         public CircularImageView fotoImage;
@@ -77,9 +79,13 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
 
         final Evaluated evaluated = this.evaluateds.get(position);
 
-        final Evaluated evaluated1 = this.evaluateds.get(1);
-
         viewHolder.nombreText.setText(evaluated.getName());
+
+        //viewHolder.nombreText.setText(OS.get(position).getName());
+
+        final String nombres = evaluated.getName();
+
+        final ArrayList<String> correcta = new ArrayList<String>();
 
 
         String url = ApiService.API_BASE_URL + "/images/" + evaluated.getImage();
@@ -99,18 +105,40 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
                     String a = adapterView.getSelectedItem().toString();
 
 
-                    String [] ab = new String[i];
+                    String [] answer = new String[evaluateds.size()-1];
+
+                  //  for(int ini = 0; ini<=position; ini++){
+
+                    //    answer[ini] = viewHolder.spinner.getSelectedItem().toString();
+
+                    //}
+                  //  answer[position] = String.valueOf(viewHolder.spinner.getSelectedItem().toString());
+
+                        correcta.add(viewHolder.spinner.getSelectedItem().toString());
+
+                    Toast.makeText(viewHolder.itemView.getContext(), position+" : "+ correcta, Toast.LENGTH_SHORT).show();
+
+                   // String [] ab = new String[i];
                     //ab [i] = a;
 
-                    int duration = Toast.LENGTH_SHORT;
+                   // for( int num=0 ; num<i ; i++){
+                   //     Log.i("Info",a+evaluateds.get(i));
+                    //    Toast toast = Toast.makeText(adapterView.getContext(), evaluated1.getName() , Toast.LENGTH_SHORT);
+                   // }
 
-                    int b = evaluateds.size();
+
 
                    // Toast toast = Toast.makeText(adapterView.getContext(), evaluated1.getName() , duration);
                    //toast.show();
 
-                    Log.i("Info",a+evaluated.getName());
-                    viewHolder.nombreText.setText(a);
+
+                    //   Log.i("Info",answer[0]);
+                    //Log.i("Info",correcta[0]);
+                    //Log.i("Info",ans);
+
+                   // Log.i("Info",answer[3]);
+
+                   // viewHolder.nombreText.setText(a);
 
 
                 }
@@ -130,5 +158,6 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
     public int getItemCount() {
         return this.evaluateds.size();
     }
+
 
 }
