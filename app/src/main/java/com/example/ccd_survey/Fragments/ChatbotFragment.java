@@ -99,7 +99,6 @@ public class ChatbotFragment extends Fragment implements AIListener {
     public void onResult(AIResponse response) {
 
 
-
         Result result = response.getResult();
 
         mTextToSpeech.speak(result.getFulfillment().getSpeech(), TextToSpeech.QUEUE_FLUSH, null, null);
@@ -108,7 +107,7 @@ public class ChatbotFragment extends Fragment implements AIListener {
         txt_cb.setTimeout(1000, TimeUnit.MILLISECONDS);
         txt_cb.setTexts(chattext);
 
-        if(result.getFulfillment().getSpeech().equalsIgnoreCase("Salir")){
+        if(chattext.equals("Salir")){
             Intent logout = new Intent(getActivity(), MainActivity.class);
             startActivity(logout);
         }

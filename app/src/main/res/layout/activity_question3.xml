@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_module1"
-    tools:context=".Activities.Question1Activity">
+    tools:context=".Activities.Question3Activity">
+
 
     <RelativeLayout
         android:id="@+id/relative_skill_innovation1"
@@ -68,7 +69,7 @@
                         <TextView
                             android:layout_marginEnd="20dp"
                             android:layout_marginStart="20dp"
-                            android:text="@string/result_question1"
+                            android:text="@string/result_question3"
                             android:textSize="13sp"
                             android:gravity="center"
                             android:id="@+id/txt_innovation_description"
@@ -86,12 +87,6 @@
 
 
 
-
-
-
-
-
-
         <RelativeLayout
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
@@ -99,11 +94,6 @@
             android:layout_below="@+id/texto_question1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-
-
-
-
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -124,24 +114,16 @@
                     </androidx.recyclerview.widget.RecyclerView>
 
 
-
-
-
-
                     <Button
-                        android:id="@+id/btn_question1"
+                        android:id="@+id/btn_question3"
                         android:layout_width="100dp"
                         android:text="Siguiente"
-                        android:onClick="next1"
                         android:textColor="#FFFFFF"
                         android:background="@drawable/btn_radius"
                         android:layout_height="50dp"
                         android:layout_below="@+id/recycler_question1"
                         android:layout_centerHorizontal="true"
                         android:layout_margin="20dp" />
-
-
-
 
 
                 </RelativeLayout>
@@ -160,11 +142,6 @@
                     android:layout_height="match_parent" />
 
             </androidx.cardview.widget.CardView>
-
-
-
-
-
 
         </RelativeLayout>
 

@@ -31,16 +31,16 @@
     <string name="results">
         Es la pasión para lograr y superar los objetivos de la empresa. Implica dirigir esfuerzos a obtener un resultado concreto sostenible en el tiempo.
     </string>
-    <string name="result_question1">Propone y establece objetivos retadores para sí mismo, así como para su equipo.</string>
-    <string name="result_question2">Genera compromiso y entusiasmo, conectando a su equipo con las metas y motivándolo a alcanzarlas.</string>
-    <string name="result_question3">Trabaja para asegurar el logro de los objetivos en los tiempos previstos y con los recursos que se le asignan ¿vence los obstáculos?</string>
+    <string name="result_question1">Propone(s) y estableces objetivos retadores para sí mismo, así como para su equipo.</string>
+    <string name="result_question2">Genera(s) compromiso y entusiasmo, conectando a su equipo con las metas y motivándolo a alcanzarlas.</string>
+    <string name="result_question3">Trabaja(s) para asegurar el logro de los objetivos en los tiempos previstos y con los recursos que se le asignan ¿vence los obstáculos?</string>
 
 
     <string name="workteam">
         Compromiso por cooperar proactivamente con otras personas y equipos para apoyar en la ejecución de la estrategia, así como lograr sinergias que permitan alcanzar los objetivos de San Fernando.
     </string>
-    <string name="workteam_question1">Promueve el diálogo abierto y cercano haciendo que todos se sientan parte activa del equipo.</string>
-    <string name="workteam_question2">Reconoce públicamente, a través de una comunicación asertiva, el aporte de los miembros de su equipo, así como los aportes de otros.</string>
+    <string name="workteam_question1">Promueve(s) el diálogo abierto y cercano haciendo que todos se sientan parte activa del equipo.</string>
+    <string name="workteam_question2">Reconoce(s) públicamente, a través de una comunicación asertiva, el aporte de los miembros de su equipo, así como los aportes de otros.</string>
     <string name="workteam_question3">Es responsable de la ejecución y del logro de los objetivos del equipo, gestiona el tiempo y los recursos necesarios para los proyectos.</string>
 
 
@@ -63,17 +63,16 @@
     <string name="responsibility">
         Capacidad de gestionar la propia efectividad sin buscar excusas; rindiendo cuentas de sus acciones y resultados con transparencias.
     </string>
-    <string name="responsibility_question1">Genera el contexto necesario para la ejecución y efectividad de quienes lo reportan, monitorea el progreso de los planes de trabajo de área.</string>
+    <string name="responsibility_question1">Monitorea el progreso de los planes de trabajo de área.</string>
     <string name="responsibility_question2">Se hace responsable y está a cargo de lo que pasa en su área.</string>
-    <string name="responsibility_question3">Construye equipos efectivos y aplica la mejora continua de los sistemas de trabajo, procesos y ejecución.</string>
 
 
     <string name="business">
         Es la capacidad de comprender rápidamente los cambios del entorno, así como las fortalezas y debilidades internas, a fin de gestionar con un enfoque integral, contemplando el todo, sus partes y las relaciones entre éstas, para identificar la mejor respuesta estratégica para el negocio.
     </string>
     <string name="business_question1">Conoce cómo se mueve cada sector estando alerta a posibles oportunidades, amenazas o riesgos.</string>
-    <string name="business_question2">Propone soluciones tomando en consideración todas las aristas, el impacto global en la empresa y los grupos de interés (accionistas, clientes internos y externos).</string>
-    <string name="business_question3">Toma decisiones analizando la mejor respuesta, más allá de sus propios intereses o los de su área.</string>
+    <string name="business_question3">Propone soluciones tomando en consideración todas las aristas, el impacto global en la empresa y los grupos de interés (accionistas, clientes internos y externos).</string>
+    <string name="business_question2">Toma decisiones analizando la mejor respuesta, más allá de sus propios intereses o los de su área.</string>
     <string name="business_question4">Gestiona enfocándose en contribuir con los factores financieros (costos, gastos y rentabilidad), de cliente (satisfacción, servicio y participación) de procesos (calidad e innovación) y de aprendizaje (cultura, clima, habilidades para la innovación y tecnología).</string>
 
 
@@ -85,8 +84,8 @@
     <string name="planning_question3">Asigna objetivos y responsabilidades en función de las capacidades y el nivel de compromiso de los miembros de su equipo.</string>
     <string name="planning_question4">Asegura que su equipo comprenda sus responsabilidades y tareas, el contexto en el que se realizarán y el resultado que se espera en cantidad, calidad y tiempo.</string>
     <string name="planning_question5">Establece las prioridades del equipo.</string>
-    <string name="planning_question6">Realiza reuniones de estatus para monitorear los avances y riesgos para la ejecución de los planes de proyectos del área.</string>
-    <string name="planning_question7">Frente a un posible retraso o problema, toma acción inmediata para llegar al resultado esperado.</string>
+    <string name="planning_question7">Realiza reuniones de estatus para monitorear los avances y riesgos para la ejecución de los planes de proyectos del área.</string>
+    <string name="planning_question6">Frente a un posible retraso o problema, toma acción inmediata para llegar al resultado esperado.</string>
 
 
     <string name="management">

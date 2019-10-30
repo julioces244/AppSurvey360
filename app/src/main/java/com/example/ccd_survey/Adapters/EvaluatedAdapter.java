@@ -33,7 +33,11 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
 
     private List<Evaluated> evaluateds;
 
+    //final ArrayList<String> correcta = new ArrayList<String>();
 
+    public List<Evaluated> getEvaluateds() {
+        return evaluateds;
+    }
 
     public EvaluatedAdapter(){
         this.evaluateds = new ArrayList<>();
@@ -81,22 +85,10 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
 
         viewHolder.nombreText.setText(evaluated.getName());
 
-        //viewHolder.nombreText.setText(OS.get(position).getName());
-
-        final String nombres = evaluated.getName();
-
-        final ArrayList<String> correcta = new ArrayList<String>();
-
 
         String url = ApiService.API_BASE_URL + "/images/" + evaluated.getImage();
         Picasso.with(viewHolder.itemView.getContext()).load(url).into(viewHolder.fotoImage);
 
-       // for (int i = 0; i< evaluateds.size(); i++){
-           /* Toast toast = Toast.makeText(adapterView.getContext(),String.valueOf(b), Toast.LENGTH_SHORT);
-            toast.show();
-
-        */
-            // String answer =  viewHolder.spinner.getSelectedItem().toString();
 
 
             viewHolder.spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -105,40 +97,14 @@ public class EvaluatedAdapter extends RecyclerView.Adapter<EvaluatedAdapter.View
                     String a = adapterView.getSelectedItem().toString();
 
 
-                    String [] answer = new String[evaluateds.size()-1];
 
-                  //  for(int ini = 0; ini<=position; ini++){
+                    evaluated.setCorrecta(viewHolder.spinner.getSelectedItem().toString());
 
-                    //    answer[ini] = viewHolder.spinner.getSelectedItem().toString();
+                    //correcta.add(viewHolder.spinner.getSelectedItem().toString());
 
-                    //}
-                  //  answer[position] = String.valueOf(viewHolder.spinner.getSelectedItem().toString());
-
-                        correcta.add(viewHolder.spinner.getSelectedItem().toString());
-
-                    Toast.makeText(viewHolder.itemView.getContext(), position+" : "+ correcta, Toast.LENGTH_SHORT).show();
-
-                   // String [] ab = new String[i];
-                    //ab [i] = a;
-
-                   // for( int num=0 ; num<i ; i++){
-                   //     Log.i("Info",a+evaluateds.get(i));
-                    //    Toast toast = Toast.makeText(adapterView.getContext(), evaluated1.getName() , Toast.LENGTH_SHORT);
-                   // }
+                    //Toast.makeText(viewHolder.itemView.getContext(), position+" : "+ correcta, Toast.LENGTH_SHORT).show();
 
 
-
-                   // Toast toast = Toast.makeText(adapterView.getContext(), evaluated1.getName() , duration);
-                   //toast.show();
-
-
-                    //   Log.i("Info",answer[0]);
-                    //Log.i("Info",correcta[0]);
-                    //Log.i("Info",ans);
-
-                   // Log.i("Info",answer[3]);
-
-                   // viewHolder.nombreText.setText(a);
 
 
                 }

@@ -6,6 +6,7 @@ public class Evaluated {
     private String name;
     private Integer category_id;
     private String image;
+    private String correcta;
 
     public Integer getIdEvaluated() {
         return idEvaluated;
@@ -37,5 +38,13 @@ public class Evaluated {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getCorrecta() {
+        return correcta;
+    }
+
+    public void setCorrecta(String correcta) {
+        this.correcta = correcta;
     }
 }
