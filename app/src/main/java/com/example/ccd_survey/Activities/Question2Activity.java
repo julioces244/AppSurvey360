@@ -52,6 +52,8 @@ public class Question2Activity extends AppCompatActivity {
 
         next();
         initialize();
+
+
     }
 
 
@@ -61,11 +63,13 @@ public class Question2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
                 EvaluatedAdapter adapter = (EvaluatedAdapter) evaluatedList.getAdapter();
                 List<Evaluated> evaluates = adapter.getEvaluateds();
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
-                //examenRepository.addEvaluatedsPorPregunta(1, evaluates);
+                examenRepository.addEvaluatedsPorPregunta(1, evaluates);
 
                 startActivity(new Intent(getApplication(), Question3Activity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

@@ -27,47 +27,37 @@ import retrofit2.Response;
 
 import static com.example.ccd_survey.MainActivity.PREFS_NAME;
 
-public class Question1Activity extends AppCompatActivity {
+public class Question32Activity extends AppCompatActivity {
 
     private static final String TAG = Question1Activity.class.getSimpleName();
 
     private RecyclerView evaluatedList;
 
     Integer id_category;
-    Button btn1;
-
+    Button btn32;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question1);
-
-        btn1 = findViewById(R.id.btn_question1);
+        setContentView(R.layout.activity_question32);
 
         evaluatedList = findViewById(R.id.recycler_question1);
         evaluatedList.setLayoutManager(new LinearLayoutManager(this));
         evaluatedList.setAdapter(new EvaluatedAdapter());
 
 
-
-        //View v = evaluatedList.getLayoutManager().findViewByPosition(0);
+        btn32 = findViewById(R.id.btn_question32);
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
         id_category = sharedPref.getInt("key_idcategory",0);
 
-        Log.d(TAG, "CODIGO CATEGORIA: " + id_category);
-
-        next1();
-
+        next();
         initialize();
-
     }
 
+    public void next() {
 
-
-    public void next1() {
-
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -75,16 +65,10 @@ public class Question1Activity extends AppCompatActivity {
                 List<Evaluated> evaluates = adapter.getEvaluateds();
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
-                examenRepository.addEvaluatedsPorPregunta(0, evaluates);
+                //examenRepository.addEvaluatedsPorPregunta(1, evaluates);
 
-                startActivity(new Intent(getApplication(), Question2Activity.class));
+                startActivity(new Intent(getApplication(), Question33Activity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
-
-                Toast.makeText(Question1Activity.this, examenRepository.evaluatedsPorPregunta.get(0).toString() , Toast.LENGTH_LONG).show();
-
-
-
 
             }
         });
@@ -114,10 +98,6 @@ public class Question1Activity extends AppCompatActivity {
                         adapter.setEvaluateds(evaluateds);
                         adapter.notifyDataSetChanged();
 
-
-
-
-
                     } else {
                         Log.e(TAG, "onError: " + response.errorBody().string());
                         throw new Exception("Error en el servicio");
@@ -126,7 +106,7 @@ public class Question1Activity extends AppCompatActivity {
                 } catch (Throwable t) {
                     try {
                         Log.e(TAG, "onThrowable: " + t.toString(), t);
-                        Toast.makeText(Question1Activity.this, t.getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(Question32Activity.this, t.getMessage(), Toast.LENGTH_LONG).show();
                     }catch (Throwable x){}
                 }
             }
@@ -134,7 +114,7 @@ public class Question1Activity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Evaluated>> call, Throwable t) {
                 Log.e(TAG, "onFailure: " + t.toString());
-                Toast.makeText(Question1Activity.this, t.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(Question32Activity.this, t.getMessage(), Toast.LENGTH_LONG).show();
             }
 
         });
@@ -145,8 +125,4 @@ public class Question1Activity extends AppCompatActivity {
         super.finish();
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
-
-
-
 }
-

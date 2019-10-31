@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_module1"
-    tools:context=".Activities.Question20Activity">
+    tools:context=".Activities.Question38Activity">
 
     <RelativeLayout
         android:id="@+id/relative_skill_innovation1"
@@ -68,7 +68,7 @@
                         <TextView
                             android:layout_marginEnd="20dp"
                             android:layout_marginStart="20dp"
-                            android:text="@string/management_question1"
+                            android:text="@string/softskills2"
                             android:textSize="13sp"
                             android:gravity="center"
                             android:id="@+id/txt_innovation_description"
@@ -114,7 +114,7 @@
 
 
                     <Button
-                        android:id="@+id/btn_question20"
+                        android:id="@+id/btn_question38"
                         android:layout_width="100dp"
                         android:text="Siguiente"
                         android:textColor="#FFFFFF"
