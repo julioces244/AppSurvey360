@@ -20,13 +20,13 @@
     <string name="softskills">Habilidades Blandas (Módulo 3)</string>
 
     <string name="softskills1">¿Cómo te llevas con tus compañeros?</string>
-    <string name="softskills2">¿Cómo te llevas con tu jefe?</string>
-    <string name="softskills3">¿Tu jefe se preocupa por ti como persona?</string>
-    <string name="softskills4">¿Tu jefe lidera el área laboral?</string>
-    <string name="softskills5">¿Tu jefe escucha las opiniones de todos?</string>
-    <string name="softskills6">¿Tu jefe es consecuente con lo que dice?</string>
-    <string name="softskills7">¿Tu jefe tiene comunicación clara fluida y precisa?</string>
-    <string name="softskills8">¿Tu jefe delega funciones y hace seguimiento?</string>
+    <string name="softskills2">¿Cómo te llevas con tu jefe?/¿Cómo se llevan contigo como jefe? </string>
+    <string name="softskills3">¿Tu jefe se preocupa por ti como persona?/¿Tú como jefe, te preocupas por tus compañeros?</string>
+    <string name="softskills4">¿Tu jefe lidera el área laboral?¿Tú como jefe, lideras el área laboral?</string>
+    <string name="softskills5">¿Tu jefe escucha las opiniones de todos?/¿Tú como jefe, escuchas las opiniones de todos?</string>
+    <string name="softskills6">¿Tu jefe es consecuente con lo que dice?/¿Tú como jefe, eres consecuente con lo que dices?</string>
+    <string name="softskills7">¿Tu jefe tiene comunicación clara fluida y precisa?/¿Tú como jefe tienes comunicación clara fluida y precisa?</string>
+    <string name="softskills8">¿Tu jefe delega funciones y hace seguimiento?/¿Tú como jefe delegas funciones y haces seguimiento?</string>
 
 
     <string name="innovation">Innovación:

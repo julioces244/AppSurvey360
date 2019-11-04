@@ -29,7 +29,7 @@ import static com.example.ccd_survey.MainActivity.PREFS_NAME;
 
 public class Question22Activity extends AppCompatActivity {
 
-    private static final String TAG = Question1Activity.class.getSimpleName();
+    private static final String TAG = Question22Activity.class.getSimpleName();
 
     private RecyclerView evaluatedList;
 

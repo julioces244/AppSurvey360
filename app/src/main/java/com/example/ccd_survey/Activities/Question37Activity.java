@@ -12,7 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.ccd_survey.Adapters.EvaluatedAdapter;
+import com.example.ccd_survey.Adapters.Evaluated2Adapter;
+
 import com.example.ccd_survey.Models.Evaluated;
 import com.example.ccd_survey.R;
 import com.example.ccd_survey.Repositories.EvaluationRepository;
@@ -29,7 +30,7 @@ import static com.example.ccd_survey.MainActivity.PREFS_NAME;
 
 public class Question37Activity extends AppCompatActivity {
 
-    private static final String TAG = Question1Activity.class.getSimpleName();
+    private static final String TAG = Question37Activity.class.getSimpleName();
 
     private RecyclerView evaluatedList;
 
@@ -43,7 +44,7 @@ public class Question37Activity extends AppCompatActivity {
 
         evaluatedList = findViewById(R.id.recycler_question1);
         evaluatedList.setLayoutManager(new LinearLayoutManager(this));
-        evaluatedList.setAdapter(new EvaluatedAdapter());
+        evaluatedList.setAdapter(new Evaluated2Adapter());
 
 
         btn37 = findViewById(R.id.btn_question37);
@@ -61,7 +62,7 @@ public class Question37Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EvaluatedAdapter adapter = (EvaluatedAdapter) evaluatedList.getAdapter();
+                Evaluated2Adapter adapter = (Evaluated2Adapter) evaluatedList.getAdapter();
                 List<Evaluated> evaluates = adapter.getEvaluateds();
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
@@ -94,7 +95,7 @@ public class Question37Activity extends AppCompatActivity {
                         List<Evaluated> evaluateds = response.body();
                         Log.d(TAG, "evaluateds: " + evaluateds);
 
-                        EvaluatedAdapter adapter = (EvaluatedAdapter) evaluatedList.getAdapter();
+                        Evaluated2Adapter adapter = (Evaluated2Adapter) evaluatedList.getAdapter();
                         adapter.setEvaluateds(evaluateds);
                         adapter.notifyDataSetChanged();
 
