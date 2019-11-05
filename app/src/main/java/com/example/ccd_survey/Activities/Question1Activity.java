@@ -80,8 +80,12 @@ public class Question1Activity extends AppCompatActivity {
                 startActivity(new Intent(getApplication(), Question2Activity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
+                for(int i = 0 ;i<=evaluates.size()-1; i++){
 
-                Toast.makeText(Question1Activity.this, examenRepository.evaluatedsPorPregunta.get(0).toString() , Toast.LENGTH_LONG).show();
+                    Toast.makeText(Question1Activity.this, evaluates.get(i).getIdEvaluated().toString() , Toast.LENGTH_LONG).show();
+
+                }
+
 
 
 

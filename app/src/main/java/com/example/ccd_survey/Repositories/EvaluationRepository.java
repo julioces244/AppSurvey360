@@ -15,8 +15,6 @@ public class EvaluationRepository {
 
     public static List<List<Evaluated>> evaluatedsPorPregunta = new ArrayList<>();
 
-    //private static List<Evaluated> vacia = new ArrayList<>();
-
 
     public static void addEvaluatedsPorPregunta(int idpregunta, List<Evaluated> evaluateds) {
 
