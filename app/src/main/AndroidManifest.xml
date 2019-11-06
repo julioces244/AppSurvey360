@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -73,22 +74,11 @@
         <activity android:name=".Activities.Question2Activity" />
         <activity android:name=".Activities.Question1Activity" />
         <activity android:name=".SplashScreenFinish_Activity" />
-        <activity android:name=".Skill_People_Activity" />
-        <activity android:name=".Skill_Communication_Activity" />
-        <activity android:name=".Skill_Management_Activity" />
         <activity android:name=".Innovation2_Activity" />
         <activity android:name=".Innovation_Activity" />
         <activity android:name=".Experience3_Activity" />
         <activity android:name=".Experience2_Activity" />
         <activity android:name=".Experience_Activity" />
-        <activity android:name=".Skill_Planning_Activity" />
-        <activity android:name=".Skill_Business_Activity" />
-        <activity android:name=".Skill_Responsability_Activity" />
-        <activity android:name=".Skill_Client_Activity" />
-        <activity android:name=".Skill_Flexibility_Activity" />
-        <activity android:name=".Skill_Workteam_Activity" />
-        <activity android:name=".Skill_Results_Activity" />
-        <activity android:name=".Skill_Innovation_Activity" />
         <activity android:name=".IndicationsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -23,7 +23,7 @@
 
 
             <com.flaviofaria.kenburnsview.KenBurnsView
-                android:src="@drawable/bg_indications"
+                android:src="@drawable/bg_splashfinish"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 

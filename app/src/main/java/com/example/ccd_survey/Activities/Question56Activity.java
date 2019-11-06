@@ -29,7 +29,7 @@ import static com.example.ccd_survey.MainActivity.PREFS_NAME;
 
 public class Question56Activity extends AppCompatActivity {
 
-    private static final String TAG = Question55Activity.class.getSimpleName();
+    private static final String TAG = Question56Activity.class.getSimpleName();
 
     private RecyclerView evaluatedList;
 
@@ -65,7 +65,7 @@ public class Question56Activity extends AppCompatActivity {
                 List<Evaluated> evaluates = adapter.getEvaluateds();
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
-                //examenRepository.addEvaluatedsPorPregunta(1, evaluates);
+                examenRepository.addEvaluatedsPorPregunta(55, evaluates);
 
                 startActivity(new Intent(getApplication(), Question57Activity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

@@ -66,7 +66,7 @@ public class Question39Activity extends AppCompatActivity {
                 List<Evaluated> evaluates = adapter.getEvaluateds();
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
-                //examenRepository.addEvaluatedsPorPregunta(1, evaluates);
+                examenRepository.addEvaluatedsPorPregunta(38, evaluates);
 
                 startActivity(new Intent(getApplication(), Question40Activity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

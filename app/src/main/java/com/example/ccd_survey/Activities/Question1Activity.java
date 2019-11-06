@@ -82,7 +82,7 @@ public class Question1Activity extends AppCompatActivity {
 
                 for(int i = 0 ;i<=evaluates.size()-1; i++){
 
-                    Toast.makeText(Question1Activity.this, evaluates.get(i).getIdEvaluated().toString() , Toast.LENGTH_LONG).show();
+                    //Toast.makeText(Question1Activity.this, evaluates.get(i).getIdEvaluated().toString() , Toast.LENGTH_LONG).show();
 
                 }
 

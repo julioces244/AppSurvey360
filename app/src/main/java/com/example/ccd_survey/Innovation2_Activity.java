@@ -27,7 +27,7 @@ public class Innovation2_Activity extends AppCompatActivity {
         btninnovation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent inno = new Intent(view.getContext(), Skill_Results_Activity.class);
+                Intent inno = new Intent(view.getContext(), Experience_Activity.class);
                 startActivity(inno);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }

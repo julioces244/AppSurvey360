@@ -3,6 +3,7 @@ package com.example.ccd_survey.Service;
 
 import com.example.ccd_survey.Models.Evaluated;
 import com.example.ccd_survey.Models.Evaluator;
+import com.example.ccd_survey.Models.Respuesta;
 import com.example.ccd_survey.ResponseMessage;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -17,6 +19,7 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
+import retrofit2.http.Streaming;
 
 public interface ApiService {
 
@@ -32,7 +35,7 @@ public interface ApiService {
 
 
     //Obteniendo lista de evaluados según el usuario que ingrese
-
+    @Streaming
     @GET("api/getEvaluated/{idcategory}")
     Call<List<Evaluated>> getEvaluatedMain(@Path("idcategory") Integer idcategory);
 
@@ -45,15 +48,10 @@ public interface ApiService {
             @Part("detalles") RequestBody detalles
     );
 
-    @FormUrlEncoded
-    @POST("/api/storeScore")
-    Call<ResponseMessage> createScore(@Field("idevaluator") Integer idevaluator,
-                                        @Field("idevaluated") Integer idevaluated,
-                                        @Field("answer1") Integer answer1,
-                                        @Field("answer2") Integer answer2,
-                                        @Field("answer3") Integer answer3,
-                                        @Field("answer4") Integer answer4,
-                                        @Field("answer5") Integer answer5);
+    //@FormUrlEncoded
+    @POST("/api/storeScore/{idevaluador}")
+    Call<ResponseMessage> createScore(@Path("idevaluador") Integer idevaluator,
+                                      @Body List<Respuesta> respuestas);
 
 
 

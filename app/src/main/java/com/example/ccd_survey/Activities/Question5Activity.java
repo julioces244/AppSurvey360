@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.ccd_survey.Adapters.EvaluatedAdapter;
 import com.example.ccd_survey.Models.Evaluated;
+import com.example.ccd_survey.Models.Respuesta;
 import com.example.ccd_survey.R;
 import com.example.ccd_survey.Repositories.EvaluationRepository;
 import com.example.ccd_survey.ResponseMessage;
@@ -69,76 +70,6 @@ public class Question5Activity extends AppCompatActivity {
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
                 examenRepository.addEvaluatedsPorPregunta(4, evaluates);
-
-
-
-                for (int i = 0 ; i<= examenRepository.evaluatedsPorPregunta.size()-1; i++){
-
-
-
-                    List<Evaluated> eva = examenRepository.evaluatedsPorPregunta.get(i);
-                    eva.get(i).getCorrecta();
-
-                    for(int ex = 0; ex<=eva.size()-1; ex++){
-
-                        List<String> respuestasporpersona = new ArrayList<String>();
-
-                         respuestasporpersona.add(eva.get(ex).getCorrecta());
-
-
-
-                    }
-
-                }
-
-
-                ApiService service = ApiServiceGenerator.createService(ApiService.class);
-
-                Call<ResponseMessage> call = null;
-
-               // call = service.createScore(eva.get(0).getCorrecta(), );
-
-                call.enqueue(new Callback<ResponseMessage>() {
-                    @Override
-                    public void onResponse(Call<ResponseMessage> call, Response<ResponseMessage> response) {
-                        try {
-
-                            int statusCode = response.code();
-                            Log.d(TAG, "HTTP status code: " + statusCode);
-
-                            if (response.isSuccessful()) {
-
-                                ResponseMessage responseMessage = response.body();
-                                Log.d(TAG, "responseMessage: " + responseMessage);
-
-                                Toast.makeText(Question5Activity.this, responseMessage.getMessage(), Toast.LENGTH_LONG).show();
-                                finish();
-
-                            } else {
-                                Log.e(TAG, "onError: " + response.errorBody().string());
-                                throw new Exception("Error en el servicio");
-                            }
-
-                        } catch (Throwable t) {
-                            try {
-                                Log.e(TAG, "onThrowable: " + t.toString(), t);
-                                Toast.makeText(Question5Activity.this, t.getMessage(), Toast.LENGTH_LONG).show();
-                            } catch (Throwable x) {
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(Call<ResponseMessage> call, Throwable t) {
-                        Log.e(TAG, "onFailure: " + t.toString());
-                        Toast.makeText(Question5Activity.this, t.getMessage(), Toast.LENGTH_LONG).show();
-                    }
-
-                });
-
-
-
-
 
                 startActivity(new Intent(getApplication(), Question6Activity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

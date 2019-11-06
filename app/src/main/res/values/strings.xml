@@ -162,13 +162,13 @@
 
     <string name="inv_1">¿Realizas actividades innovadoras en tu centro laboral?</string>
     <string name="inv_2">¿Hay estrategia de innovación en el CCD?</string>
-    <string name="inv_3">¿Estas de acuerdo con la estrategia del CCD?</string>
+    <string name="inv_3">¿Está(s) de acuerdo con la estrategia del CCD?</string>
     <string name="inv_4">¿El CCD realizó actividades con el objetivo de lograr la implementación de una nueva forma de organización de las prácticas para una organización en el trabajo?</string>
-    <string name="inv_5">¿Estas atento a todo lo que nos rodea y buscas nuevas oportunidades?</string>
-    <string name="inv_6">¿Has encontrado problemas en el desarrollo de tus labores?</string>
+    <string name="inv_5">¿Está(s) atento a todo lo que nos rodea y buscas nuevas oportunidades?</string>
+    <string name="inv_6">¿Ha(s) encontrado problemas en el desarrollo de tus labores?</string>
     <string name="inv_7">¿Cuándo existe un problema dentro de una determinada labor, pero aún así las personas siguen trabajando en vez de hacer algo para solucionarlo, surge una oportunidad para que tú puedas solucionarlo?</string>
-    <string name="inv_8">¿Crees que la solución realizada ha sido innovadora?</string>
-    <string name="inv_9">¿Realizas capacitación para actividades de innovación?</string>
+    <string name="inv_8">¿Cree(s) que la solución realizada ha sido innovadora?</string>
+    <string name="inv_9">Ultima pregunta: ¿Realizas capacitación para actividades de innovación?</string>
 
 
     <string name="innovatione_question1">¿Hay estrategia de innovación en la empresa?</string>

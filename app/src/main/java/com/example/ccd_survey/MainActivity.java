@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ccd_survey.Activities.Question1Activity;
 import com.example.ccd_survey.Models.Evaluator;
 import com.example.ccd_survey.Service.ApiService;
 import com.example.ccd_survey.Service.ApiServiceGenerator;
@@ -143,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                                Intent login = new Intent(MainActivity.this, IndicationsActivity.class);
+                                Intent login = new Intent(MainActivity.this, Question1Activity.class);
                                 startActivity(login);
                             }
                         }).start();
