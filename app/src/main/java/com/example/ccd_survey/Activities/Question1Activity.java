@@ -86,10 +86,6 @@ public class Question1Activity extends AppCompatActivity {
 
                 }
 
-
-
-
-
             }
         });
 

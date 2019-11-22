@@ -12,15 +12,45 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <fragment
+        <LinearLayout
             android:id="@+id/fragment_bot"
-            android:visibility="visible"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            tools:layout="@layout/fragment_chatbot"
-            class= "com.example.ccd_survey.Fragments.ChatbotFragment">
+            android:layout_height="85dp">
 
-        </fragment>
+            <!-- TODO: Update blank fragment layout -->
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.6"
+                app:cardBackgroundColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_gradient5"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#FFF"
+                        android:text="Pregunta 32"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/expressway"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
 
         <RelativeLayout
 

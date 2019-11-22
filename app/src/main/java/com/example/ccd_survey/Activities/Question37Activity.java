@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.ccd_survey.Adapters.Evaluated2Adapter;
+import com.example.ccd_survey.Adapters.Evaluated3Adapter;
 
 import com.example.ccd_survey.Models.Evaluated;
 import com.example.ccd_survey.R;
@@ -44,7 +44,7 @@ public class Question37Activity extends AppCompatActivity {
 
         evaluatedList = findViewById(R.id.recycler_question1);
         evaluatedList.setLayoutManager(new LinearLayoutManager(this));
-        evaluatedList.setAdapter(new Evaluated2Adapter());
+        evaluatedList.setAdapter(new Evaluated3Adapter());
 
 
         btn37 = findViewById(R.id.btn_question37);
@@ -62,7 +62,7 @@ public class Question37Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Evaluated2Adapter adapter = (Evaluated2Adapter) evaluatedList.getAdapter();
+                Evaluated3Adapter adapter = (Evaluated3Adapter) evaluatedList.getAdapter();
                 List<Evaluated> evaluates = adapter.getEvaluateds();
 
                 EvaluationRepository examenRepository = new EvaluationRepository();
@@ -95,7 +95,7 @@ public class Question37Activity extends AppCompatActivity {
                         List<Evaluated> evaluateds = response.body();
                         Log.d(TAG, "evaluateds: " + evaluateds);
 
-                        Evaluated2Adapter adapter = (Evaluated2Adapter) evaluatedList.getAdapter();
+                        Evaluated3Adapter adapter = (Evaluated3Adapter) evaluatedList.getAdapter();
                         adapter.setEvaluateds(evaluateds);
                         adapter.notifyDataSetChanged();
 

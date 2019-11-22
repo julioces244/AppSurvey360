@@ -16,10 +16,10 @@
 
     <string-array name="answer_experience">
         <item> </item>
-        <item>1-3</item>
-        <item>4-7</item>
-        <item>8-12</item>
-        <item>+12</item>
+        <item>Trabaja con normalidad y respeto</item>
+        <item>Trabaja con normalidad</item>
+        <item>No trabaja con normalidad, se ofusca</item>
+        <item>No trabaja con normalidad, falta el respeto</item>
     </string-array>
 
     <string-array name="answer3">
@@ -28,6 +28,15 @@
         <item>Bien</item>
         <item>Regular</item>
         <item>Mal</item>
-        <item>Muy mal</item>
     </string-array>
+
+    <string-array name="answer4">
+        <item> </item>
+        <item>Mucha</item>
+        <item>Regular</item>
+        <item>Poca</item>
+        <item>Ninguna</item>
+    </string-array>
+
+
 </resources>

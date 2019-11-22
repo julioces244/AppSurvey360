@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CCD_Survey</string>
+    <string name="app_name">Evaluación 360</string>
 
 
     <string name="rating1">Necesita mejorar significativamente para cumplir con lo requerido para su disposición. Es una debilidad.</string>
@@ -19,14 +19,14 @@
 
     <string name="softskills">Habilidades Blandas (Módulo 3)</string>
 
-    <string name="softskills1">¿Cómo te llevas con tus compañeros?</string>
-    <string name="softskills2">¿Cómo te llevas con tu jefe?/¿Cómo se llevan contigo como jefe? </string>
-    <string name="softskills3">¿Tu jefe se preocupa por ti como persona?/¿Tú como jefe, te preocupas por tus compañeros?</string>
-    <string name="softskills4">¿Tu jefe lidera el área laboral?¿Tú como jefe, lideras el área laboral?</string>
+    <string name="softskills1">¿Cómo se lleva con sus compañeros?</string>
+    <string name="softskills2">¿Cómo se lleva con su jefe?</string>
+    <string name="softskills3">¿Tu jefe se preocupa por ti como persona?</string>
+    <string name="softskills4">¿Tu jefe lidera el área laboral?/¿Tú como jefe, lideras el área laboral?</string>
     <string name="softskills5">¿Tu jefe escucha las opiniones de todos?/¿Tú como jefe, escuchas las opiniones de todos?</string>
     <string name="softskills6">¿Tu jefe es consecuente con lo que dice?/¿Tú como jefe, eres consecuente con lo que dices?</string>
-    <string name="softskills7">¿Tu jefe tiene comunicación clara fluida y precisa?/¿Tú como jefe tienes comunicación clara fluida y precisa?</string>
-    <string name="softskills8">¿Tu jefe delega funciones y hace seguimiento?/¿Tú como jefe delegas funciones y haces seguimiento?</string>
+    <string name="softskills7">¿Tiene comunicación clara fluida y precisa?</string>
+    <string name="softskills8">¿Delega funciones y hace seguimiento?</string>
 
 
     <string name="innovation">Innovación:
@@ -40,17 +40,17 @@
     <string name="results">
         Es la pasión para lograr y superar los objetivos de la empresa. Implica dirigir esfuerzos a obtener un resultado concreto sostenible en el tiempo.
     </string>
-    <string name="result_question1">Propone(s) y estableces objetivos retadores para sí mismo, así como para su equipo.</string>
-    <string name="result_question2">Genera(s) compromiso y entusiasmo, conectando a su equipo con las metas y motivándolo a alcanzarlas.</string>
-    <string name="result_question3">Trabaja(s) para asegurar el logro de los objetivos en los tiempos previstos y con los recursos que se le asignan ¿vence los obstáculos?</string>
+    <string name="result_question1">Propone y establece objetivos retadores para sí mismo, así como para su equipo.</string>
+    <string name="result_question2">Genera compromiso y entusiasmo, conectando a su equipo con las metas y motivándolo a alcanzarlas.</string>
+    <string name="result_question3">Trabaja para asegurar el logro de los objetivos en los tiempos previstos y con los recursos que se le asignan ¿vence los obstáculos?</string>
 
 
     <string name="workteam">
         Compromiso por cooperar proactivamente con otras personas y equipos para apoyar en la ejecución de la estrategia, así como lograr sinergias que permitan alcanzar los objetivos de San Fernando.
     </string>
-    <string name="workteam_question1">Promueve(s) el diálogo abierto y cercano haciendo que todos se sientan parte activa del equipo.</string>
-    <string name="workteam_question2">Reconoce(s) públicamente, a través de una comunicación asertiva, el aporte de los miembros de su equipo, así como los aportes de otros.</string>
-    <string name="workteam_question3">Es responsable de la ejecución y del logro de los objetivos del equipo, gestiona el tiempo y los recursos necesarios para los proyectos.</string>
+    <string name="workteam_question1">Promueve el diálogo abierto y cercano haciendo que todos se sientan parte activa del equipo.</string>
+    <string name="workteam_question2">Reconoce públicamente, a través de una comunicación asertiva, el aporte de los miembros de su equipo, así como los aportes de otros.</string>
+    <string name="workteam_question3">Eres responsable de la ejecución y del logro de los objetivos del equipo, gestiona el tiempo y los recursos necesarios para los proyectos.</string>
 
 
     <string name="flexibility">
@@ -126,11 +126,16 @@
         Es interesarse genuinamente por crear las condiciones para asegurar el desarrollo, aprendizaje y compromiso de los colaboradores, aflorando el máximo potencial de las personas para contribuir equipos de alto rendimiento.
     </string>
     <string name="developing_question1">Asume la responsabilidad de la gestión de su equipo (seguridad, selección, capacitación, inducción, temas personales, amonestaciones, etc.).</string>
-    <string name="developing_question2">¿Transmite(s) sus conocimientos y experiencias, enseñando a su equipo nuevas formas de pensar y actuar?</string>
+    <string name="developing_question2">¿Transmite sus conocimientos y experiencias, enseñando a su equipo nuevas formas de pensar y actuar?</string>
     <string name="developing_question3">Periódicamente brinda retroalimentación, sobre qué funciona, qué no y que mejorar, reforzando comportamientos deseables.</string>
     <string name="developing_question4">Identifica a los más talentosos de su equipo (alto desempeño y alto potencial) y define un plan de acción para su desarrollo.</string>
     <string name="developing_question5">Forma una cantera de colaboradores dentro de su área para asegurar la cobertura futura de puestos clave.</string>
-    <string name="developing_question6">¿Reconoce(s) los logros de tus compañeros?</string>
+    <string name="developing_question6">¿Reconoce los logros de tus compañeros?</string>
+
+    <string name="presion">¿En situaciones laborales bajo presión o estrés como reacciona?</string>
+    <string name="new_experience">¿Consideras que tiene experiencia en el cargo que desempeña?</string>
+
+
 
 
     <string name="experience"></string>
@@ -143,7 +148,7 @@
     <string name="experience_question7">¿Has tenido oportunidades en el trabajo para aprender y crecer?</string>
     <string name="experience_question8">¿Has recibido reconocimiento o elogios por hacer un buen trabajo?</string>
     <string name="experience_question9">¿Mis opiniones cuentan en mi trabajo?</string>
-    <string name="experience_question10">¿Cómo te llevas con tus compañeros?</string>
+    <string name="experience_question10">¿Cómo e llevas con tus compañeros?</string>
     <string name="experience_question11">¿Mis compañeros de trabajo están comprometidos a hacer un trabajo de calidad?</string>
     <string name="experience_question12">Nombre una persona de tu equipo que te apoya siempre</string>
     <string name="experience_question13">¿Cómo te llevas con tú jefe?</string>
@@ -154,18 +159,18 @@
     <string name="experience_question18">¿Tu jefe delega funciones y hace seguimiento?</string>
 
 
-    <string name="exp_1">¿Cuántos años de experiencia laboral tienes?</string>
-    <string name="exp_2">A la hora de trabajar, ¿Organizas y planificas tu trabajo antes de realizarlo?</string>
-    <string name="exp_3">¿Tenía usted personas a su cargo?</string>
-    <string name="exp_4">Actualmente, ¿Tienes personas a tu cargo?</string>
-    <string name="exp_5">¿Has recibido reconocimientos o elogios por hacer un buen trabajo?</string>
+    <string name="exp_1">¿Cuántos años de experiencia laboral tiene(s)?</string>
+    <string name="exp_2">A la hora de trabajar, ¿Organiza(s) y planifica(s) tu/su trabajo antes de realizarlo?</string>
+    <string name="exp_3">¿Tenía(s) personas a su cargo?</string>
+    <string name="exp_4">Actualmente, ¿Tiene(s) personas a tu cargo?</string>
+    <string name="exp_5">¿Ha(s) recibido reconocimientos o elogios por hacer un buen trabajo?</string>
 
-    <string name="inv_1">¿Realizas actividades innovadoras en tu centro laboral?</string>
+    <string name="inv_1">¿Realiza actividades innovadoras en el centro laboral?</string>
     <string name="inv_2">¿Hay estrategia de innovación en el CCD?</string>
     <string name="inv_3">¿Está(s) de acuerdo con la estrategia del CCD?</string>
     <string name="inv_4">¿El CCD realizó actividades con el objetivo de lograr la implementación de una nueva forma de organización de las prácticas para una organización en el trabajo?</string>
-    <string name="inv_5">¿Está(s) atento a todo lo que nos rodea y buscas nuevas oportunidades?</string>
-    <string name="inv_6">¿Ha(s) encontrado problemas en el desarrollo de tus labores?</string>
+    <string name="inv_5">¿Está atento a todo lo que nos rodea y busca nuevas oportunidades?</string>
+    <string name="inv_6">¿Ha encontrado problemas en el desarrollo de sus labores?</string>
     <string name="inv_7">¿Cuándo existe un problema dentro de una determinada labor, pero aún así las personas siguen trabajando en vez de hacer algo para solucionarlo, surge una oportunidad para que tú puedas solucionarlo?</string>
     <string name="inv_8">¿Cree(s) que la solución realizada ha sido innovadora?</string>
     <string name="inv_9">Ultima pregunta: ¿Realizas capacitación para actividades de innovación?</string>

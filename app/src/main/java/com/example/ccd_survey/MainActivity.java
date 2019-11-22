@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         et_username = (EditText) findViewById(R.id.et_username);
         et_password = (EditText) findViewById(R.id.et_password);
 
+        progressBar.setVisibility(View.INVISIBLE);
+        //main_login.setVisibility(View.VISIBLE);
+
 
         permissionAudio();
 
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
 
                                 idEvaluator = responseMessage.getIdEvaluator();
-                                idCategory = responseMessage.getCategory_id();
+                                idCategory = responseMessage.getIdEvaluator();
 
                                 SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
                                 SharedPreferences.Editor editor = sharedPref.edit();
@@ -143,9 +146,9 @@ public class MainActivity extends AppCompatActivity {
                                 editor.commit();
 
 
-
                                 Intent login = new Intent(MainActivity.this, Question1Activity.class);
                                 startActivity(login);
+
                             }
                         }).start();
 

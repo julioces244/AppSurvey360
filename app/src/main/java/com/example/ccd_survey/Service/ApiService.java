@@ -36,8 +36,8 @@ public interface ApiService {
 
     //Obteniendo lista de evaluados según el usuario que ingrese
     @Streaming
-    @GET("api/getEvaluated/{idcategory}")
-    Call<List<Evaluated>> getEvaluatedMain(@Path("idcategory") Integer idcategory);
+    @GET("api/getEvaluated2/{idself}")
+    Call<List<Evaluated>> getEvaluatedMain(@Path("idself") Integer idcategory);
 
 
     @Multipart
